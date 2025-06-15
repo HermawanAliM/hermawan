@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Portfolio Hermawan Ali M - Junior Web Developer dengan proyek seperti Weather App, Movie Explorer, dan lainnya.">
+  <title>Hermawan Ali M</title>
+  <link rel="stylesheet" href="./public/assets/css/output.css">
+</head>
+
+<body class="font-poppins text-gray-800">
+
+  <!-- Navbar -->
+  <header class="bg-[#5E6472] text-white sticky top-0 z-50 shadow-md">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="text-xl font-bold">HermawanAM</div>
+
+      <!-- Hamburger Button -->
+      <button id="menu-toggle" class="md:hidden text-white focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+
+      <!-- Navigation Links -->
+      <nav id="nav-links" class="hidden md:flex space-x-4">
+        <a href="#hero" class="hover:underline block py-2">Beranda</a>
+        <a href="#about" class="hover:underline block py-2">Tentang</a>
+        <a href="#skills" class="hover:underline block py-2">Keahlian</a>
+        <a href="#projects" class="hover:underline block py-2">Proyek</a>
+        <a href="#contact" class="hover:underline block py-2">Kontak</a>
+      </nav>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
+      <a href="#hero" class="block py-2 border-b border-white/20">Beranda</a>
+      <a href="#about" class="block py-2 border-b border-white/20">Tentang</a>
+      <a href="#skills" class="block py-2 border-b border-white/20">Keahlian</a>
+      <a href="#projects" class="block py-2 border-b border-white/20">Proyek</a>
+      <a href="#contact" class="block py-2">Kontak</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="hero" class="bg-[#FFA69E] py-20 text-center">
+      <img src="./public/assets/img/myfoto1.jpg" class="w-32 h-32 rounded-full object-cover mx-auto mb-4"
+        alt="Foto Hermawan">
+      <h1 class="text-4xl font-bold mb-2">Hermawan Ali M</h1>
+      <p class="text-xl">Junior Web Developer | Tech Enthusiast</p>
+    </section>
+
+    <!-- Tentang -->
+    <section id="about" class="bg-[#FAF3DD] py-16 px-4 max-w-3xl mx-auto">
+      <h2 class="text-2xl font-semibold mb-4 mt-10 text-center">Tentang Saya</h2>
+      <p>Saya seorang Junior Web Developer dengan ketertarikan di dunia teknologi. Saat ini saya sedang belajar dan
+        mengembangkan kemampuan dasar dalam membuat website menggunakan HTML, CSS, dan JavaScript. Meskipun belum
+        terlalu
+        mahir dalam membangun web yang interaktif dan responsif, saya terus belajar melalui project kecil dan eksplorasi
+        teknologi web. Sebagai Tech Enthusiast, saya suka mencoba tools baru dan mengikuti perkembangan dunia teknologi.
+      </p>
+    </section>
+
+    <!-- Keahlian -->
+    <section id="skills" class="bg-[#B8F2E6] py-16 px-4 ">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-2xl font-semibold mb-5 mt-10 text-center">Keahlian</h2>
+        <ul class="grid grid-cols-2 md:grid-cols-3 gap-4 text-center">
+          <li class="bg-white p-4 rounded shadow">
+            <div class="flex items-center justify-center gap-2">
+              <img src="./public/assets/icon/html-5.png" alt="HTML 5" class="w-6 h-6">
+              <span>HTML 5</span>
+            </div>
+          </li>
+          <li class="bg-white p-4 rounded shadow">
+            <div class="flex items-center justify-center gap-2">
+              <img src="./public/assets/icon/css-3.png" alt="HTML 5" class="w-6 h-6">
+              <span>CSS 3</span>
+            </div>
+          </li>
+          <li class="bg-white p-4 rounded shadow">
+            <div class="flex items-center justify-center gap-2">
+              <img src="./public/assets/icon/js.png" alt="JavaScript" class="w-6 h-6">
+              <span>JavaScript</span>
+            </div>
+          </li>
+          <li class="bg-white p-4 rounded shadow">
+            <div class="flex items-center justify-center gap-2">
+              <img src="./public/assets/icon/github.png" alt="Github" class="w-6 h-6">
+              <span>Github</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Proyek -->
+    <section id="projects" class="bg-[#FAF3DD] py-16 px-4 max-w-4xl mx-auto">
+      <h2 class="text-2xl font-semibold mb-10 text-center">Proyek</h2>
+      <div class="grid grid-cols-1 gap-6">
+
+        <figure class="border p-4 rounded shadow flex flex-col md:flex-row items-center md:items-start gap-4 bg-white">
+          <img src="./public/assets/projects/img1.jpg" alt="Weather App"
+            class="w-full md:w-64 h-60 object-cover object-center rounded">
+          <figcaption class="w-full">
+            <h3 class="font-bold text-2xl md:text-3xl">Weather App</h3>
+            <p class="text-sm mb-2 text-gray-600">Dibuat Agustus 2018</p>
+            <p class="text-base mb-3">Web untuk mengetahui cuaca di area sekitar.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="badge bg-red-50 text-red-700 ring-red-600/10">HTML 5</span>
+              <span class="badge bg-blue-50 text-blue-700 ring-blue-700/10">CSS 3</span>
+              <span class="badge bg-yellow-50 text-yellow-800 ring-yellow-600/20">JavaScript</span>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="border p-4 rounded shadow flex flex-col md:flex-row items-center md:items-start gap-4 bg-white">
+          <img src="./public/assets/projects/img1.jpg" alt="Weather App"
+            class="w-full md:w-64 h-60 object-cover object-center rounded">
+          <figcaption class="w-full">
+            <h3 class="font-bold text-2xl md:text-3xl">Movie Explorer</h3>
+            <p class="text-sm mb-2 text-gray-600">Dibuat Agustus 2019</p>
+            <p class="text-base mb-3">Single Page App untuk mencari dan menampilkan data film dari API.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="badge bg-red-50 text-red-700 ring-red-600/10">HTML 5</span>
+              <span class="badge bg-blue-50 text-blue-700 ring-blue-700/10">CSS 3</span>
+              <span class="badge bg-yellow-50 text-yellow-800 ring-yellow-600/20">JavaScript</span>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="border p-4 rounded shadow flex flex-col md:flex-row items-center md:items-start gap-4 bg-white">
+          <img src="./public/assets/projects/img1.jpg" alt="Weather App"
+            class="w-full md:w-64 h-60 object-cover object-center rounded">
+          <figcaption class="w-full">
+            <h3 class="font-bold text-2xl md:text-3xl">Quote Generator</h3>
+            <p class="text-sm mb-2 text-gray-600">Dibuat Agustus 2020</p>
+            <p class="text-base mb-3">Aplikasi untuk menghasilkan kutipan secara acak.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="badge bg-red-50 text-red-700 ring-red-600/10">HTML 5</span>
+              <span class="badge bg-blue-50 text-blue-700 ring-blue-700/10">CSS 3</span>
+              <span class="badge bg-yellow-50 text-yellow-800 ring-yellow-600/20">JavaScript</span>
+            </div>
+          </figcaption>
+        </figure>
+
+      </div>
+    </section>
+
+
+
+
+    <!-- Kontak -->
+    <section id="contact" class="bg-[#B8F2E6] py-16 px-4">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-2xl font-semibold mb-4">Kontak</h2>
+
+        <div class="flex flex-wrap justify-center gap-6">
+          <!-- Gmail -->
+          <a href="mailto:hermawanali359@gmail.com" class="flex items-center gap-2 hover:underline">
+            <img src="./public/assets/icon/gmail.png" alt="Gmail" class="w-6 h-6">
+            <span>Gmail</span>
+          </a>
+
+          <!-- Linkedin -->
+          <a href="https://www.linkedin.com/in/hermawan-ali-mangambali/" target="_blank"
+            class="flex items-center gap-2 hover:underline">
+            <img src="./public/assets/icon/linkedin.png" alt="Linkedin" class="w-6 h-6">
+            <span>Linkedin</span>
+          </a>
+
+          <!-- GitHub -->
+          <a href="https://github.com/HermawanAliM" target="_blank" class="flex items-center gap-2 hover:underline">
+            <img src="./public/assets/icon/github-sign.png" alt="GitHub" class="w-6 h-6">
+            <span>GitHub</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- Footer -->
+  <footer class="bg-[#2B2D42] text-white py-4 text-center">
+    <p>&copy; 2025 Hermawan. Dibuat dengan ❤️ oleh Hermawan.</p>
+  </footer>
+
+  <script src="./public/assets/js/script.js"></script>
+</body>
+
+</html>
